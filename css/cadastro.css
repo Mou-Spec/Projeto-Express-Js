@@ -33,9 +33,19 @@
 }
 
 .btn-primary {
- background: var(--primary-dark);
+  background: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
   transform: translateY(-2px);
 }
+
 .btn-danger {
   border-radius: 8px;
   transition: var(--transition);

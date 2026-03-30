@@ -33,56 +33,9 @@
 }
 
 .btn-primary {
-  background: var(--primary-color);
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-  font-weight: 600;
-  transition: var(--transition);
+ background: var(--primary-dark);
+  transform: translateY(-2px);
 }
-
-.btn-primary {
-  background: #0a0a0f;
-  color: #00fff7;
-  border: 1px solid #00fff7;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-primary::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent, #ff00ff, transparent);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.btn-primary:hover {
-  background: #050507;
-  color: #ff00ff;
-  box-shadow:
-    0 0 5px #00fff7,
-    0 0 10px #00fff7,
-    0 0 20px #ff00ff,
-    0 0 40px #ff00ff;
-  transform: scale(1.05);
-}
-
-.btn-primary:hover::before {
-  opacity: 1;
-  animation: glitch 0.3s infinite;
-}
-
-@keyframes glitch {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-2px); }
-  50% { transform: translateX(2px); }
-  75% { transform: translateX(-1px); }
-  100% { transform: translateX(0); }
-}
-
 .btn-danger {
   border-radius: 8px;
   transition: var(--transition);
